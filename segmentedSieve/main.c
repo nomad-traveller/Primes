@@ -8,10 +8,7 @@
 #include <math.h>
 #include <assert.h>
 
-typedef unsigned long u64;
-typedef unsigned int u32;
 typedef unsigned short u16;
-typedef unsigned char u8;
 
 #define SET(arr,bit) (*((arr)+(((bit)>>7)))|=((1llu<<(((bit)>>1)&63))))
 #define GET(arr,bit) (*((arr)+(((bit)>>7)))& ((1llu<<(((bit)>>1)&63))))
